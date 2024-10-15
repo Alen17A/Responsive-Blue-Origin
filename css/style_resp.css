@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+}
+
+.container-fluid{
+    border: 1px solid black;
+}
+
+/* Navbar starts */
+.navbar img{
+    width: 100%;
+}
