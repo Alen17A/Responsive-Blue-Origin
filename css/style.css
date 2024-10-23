@@ -11,7 +11,7 @@
 
 /* Navbar begins */
 .navbar{
-    width: 100%;
+    /* width: 100%; */
     height: 100px;
     background-color: #03d;
     box-sizing: border-box;
@@ -244,6 +244,10 @@
                 .pri-ters{
                     border-bottom: 1px solid grey;
                 }
+
+                .sections-ul :hover {
+                    border-bottom: 1px  white;
+                }
         
         .sections{
             padding: 18px;
@@ -348,9 +352,3 @@
 /* Footer ends */
 
 /* Responsive website starts*/
-@media (max-width: 320px) {
-    .container-fluid{
-        width: 100%;
-    }
-    
-}
