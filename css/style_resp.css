@@ -16,13 +16,14 @@
 .nav{
     background-color: #03d;
     height: fit-content;
-    display: flex;
-    align-items: center;
-    box-sizing: content-box;
+    /* display: flex;
+    align-items: center; */
 }
 
     .logo{
         width: 11em;
+        max-width: 100%;
+        height: auto;
     }
 
     .navbar-ul{
@@ -43,7 +44,7 @@
 
     .nav-btn{
         background-color: var(--btn-bg-color);
-        border-radius: 0.1em;
+        border-radius: 0.2em;
         padding: 0.8em 1em;
         letter-spacing: 0.1em;
         font-weight: bold;
@@ -53,12 +54,17 @@
         margin-right: 3em;
         height: 3em;
         width: 10em;
+        border: none;
     }
 
     .equal{
         color: white;
         font-size: 3em;
         margin-right: 0.5em;
+    }
+
+    .navbar-toggler{
+        border: none;
     }
 /* Navbar ends */
 
@@ -89,6 +95,7 @@
 
         .new-sh{
             font-weight: 500; 
+            font-size: 2em;
             font-family: "From the Stars W01 ExtraLight";
         }
 
@@ -107,6 +114,7 @@
             font-weight: 900;
             font-family: "Exo 2", sans-serif;
             margin-top: -20px;
+            font-size: 1.5em;
         }
 
         .learn-more{
@@ -185,25 +193,13 @@
 
 
 /* Footer begins */
-.footer{
+/* .footer{
     width: 100%;
     height: 600px;
     padding: 0px 0px 0px 50px;
     background-color: #2a2a2a;
     display: flex;
 }
-
-    .f-details{
-        width: 1700px;
-        height: fit-content;
-        /* border: 1px solid black; */
-        display: grid;
-        grid-template-rows: 100%;
-        grid-template-columns: repeat(2,1fr);
-        background-color: #2a2a2a;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
 
         .logo-cdetails{
             grid-row: 1;
@@ -245,7 +241,7 @@
         .sections{
             padding: 18px;
             /* border: 1px solid white; */
-            display: flex;
+            /* display: flex;
             flex-direction: column;
         }
 
@@ -341,7 +337,147 @@
                     color: white;
                     border: 1px solid white;
                     font-weight: bold;
-                }
+                } */ */
 /* Footer ends */
+
+/* Footer responsive */
+
+.footer{
+    padding: 5rem;
+}
+
+    .logo-cdetails{
+        background-color: #2a2a2a;
+        padding: 3em;
+    }
+
+        .feather{
+                width: 200px;
+                height: fit-content;
+                margin-top: 100px;
+        }
+
+        .copyright{
+                margin-top: 20px;
+                color: grey;
+                font-size: 10px;
+            }
+
+            .pri-ter{
+                display: flex;
+                gap: 10px;
+                color: grey;
+                margin-top: 20px;
+                font-size: 13px;
+            }
+
+                .pri-ters{
+                    border-bottom: 1px solid grey;
+                }
+
+                .sections-ul :hover {
+                    border-bottom: 1px  white;
+                }
+        
+    .sections{
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            background-color: #2a2a2a;
+        }
+
+            .sections-ul{
+                height: fit-content;
+                width: 100%;
+            }
+
+                .sections ul li{
+                    display: flex;
+                    align-items: center;
+                    padding: 18px;
+                    color: rgb(209, 209, 209);
+                }
+
+            .sections-button{
+                padding: 0px 60px;
+                
+            }
+
+                .sections-button button{
+                    padding: 10px 10px;
+                    background-color: transparent;
+                    color: white;
+                    border: 1px solid white;
+                    font-size: 15px;
+                }
+
+    .f-subscribe{
+            height: 100%;
+            border: 1px solid black;
+            background-color: rgb(48, 47, 47);
+            padding: 50px 30px 50px 30px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            
+        }
+
+            .sub-h2{
+                color: rgb(171, 169, 169);
+                font-family: "From the Stars W01 ExtraLight";
+            }
+
+            .sub-h3{
+                margin-top: 20px;
+                line-height: 1.3;
+                color: rgb(171, 169, 169);
+                font-weight: 200;
+            }
+
+            .sub-h3-ident{
+                margin-top: 20px;
+                color: rgb(171, 169, 169);
+            }
+
+            .sub-email{
+                margin-top: 20px;
+            }
+
+            .sub-email-box{
+                margin-top: 10px;
+                height: 40px;
+                width: 100%;
+                border: 1px solid white;
+            }
+
+            .sub-box-content{
+                margin-top: 20px;
+                display: flex;
+                gap: 10px;
+            }
+
+                .small-box{
+                    height: 20px;
+                    width: 100px;
+                    border: 1px solid white;
+                }
+
+                .box-content{
+                    line-height: 1.6;
+                    color: rgb(171, 169, 169);
+                }
+
+            .submit{
+                margin-top: 10px;
+            }
+
+                .submit button{
+                    padding: 5px 10px;
+                    background-color: transparent;
+                    color: white;
+                    border: 1px solid white;
+                    font-weight: bold;
+                } 
+    
 
 
